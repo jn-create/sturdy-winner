@@ -1,7 +1,11 @@
+# Creates a Sample Pyqt widget in Houdini
+# Scans the Lop Network in houdini for lights and if found has options to change the RGB values of the selected light visually by icons in the qt window
+# The ui_d.ui file path should be set to the correct one for this function , ui_d.ui attached separetly 
+# More visual functinality will be added in future versions 
+# Create new tool tab in houdini and add this code in the script section 
+
 import hou
-
 from PySide2 import QtCore, QtUiTools, QtWidgets
-
 
 class MyWidget(QtWidgets.QWidget):
     def __init__(self):
@@ -23,7 +27,7 @@ class MyWidget(QtWidgets.QWidget):
         self.lcdDisplay = self.ui.lcd
         self.progress = self.ui.progressBar 
         self.ui.pushButton.clicked.connect(self.activate)
-        
+
         
     def onValChanged(self, text):
         self.text = text
