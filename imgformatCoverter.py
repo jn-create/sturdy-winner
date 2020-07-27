@@ -1,3 +1,8 @@
+#################################################################################################################################################################
+#  Simple pyqt tool for converting one file format to another , uses the PIL module 
+#  ,animated gif maker and can create icons with this tool as well
+#################################################################################################################################################################
+
 from PyQt5 import QtCore, uic, QtWidgets
 from pathlib import Path
 from PyQt5.QtGui import *
