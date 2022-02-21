@@ -13,14 +13,14 @@ class MyWidget(QtWidgets.QWidget):
     def __init__(self):
         super(MyWidget,self).__init__()
         self.setFixedSize(1072, 719)
-        ui_file = 'C:\\Users\\matrix\\Documents\\scripts\\fileformatCoverter.ui'
+        ui_file = '\\fileformatCoverter.ui'
         self.ui = uic.loadUi(ui_file,self)
         self.home()
         self.listExt()
         self.show()
 
     def home(self):
-        self.gifPath = "C:\\Users\\matrix\\uiInterface\\seqImg.gif"
+        self.gifPath = "\\seqImg.gif"
 
         self.dspl = self.ui.displayImg
 
